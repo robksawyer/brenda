@@ -1,19 +1,21 @@
 #!/usr/bin/python -u
-echo "Compute Optimized - Current Generation"
+print "Compute Optimized - Current Generation"
 brenda-run -i c4.large price
 brenda-run -i c4.xlarge price
 brenda-run -i c4.2xlarge price
 brenda-run -i c4.4xlarge price
 brenda-run -i c4.8xlarge price
-echo ""
+print ""
 brenda-run -i c3.large price
 brenda-run -i c3.xlarge price
 brenda-run -i c3.2xlarge price
 brenda-run -i c3.4xlarge price
 brenda-run -i c3.8xlarge price
-echo ""
-echo "--"
-echo ""
-echo "GPU Instances - Current Generation"
+print ""
+print "--"
+print ""
+print "GPU Instances - Current Generation"
 brenda-run -i g2.2xlarge price
 brenda-run -i g2.8xlarge price
+
+sys.exit(2)
